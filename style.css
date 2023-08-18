@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+}
+
+.card {
+    height: 100vh;
+    width: 100%;
+    background: var(--light-gray);
+    display: grid;
+    place-content: center;
+}
+
+.overview {
+    height: 45rem;
+    max-width: 28rem;
+    background: var(--white);
+    border-radius: 25px;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.qr {
+    height: 65%;
+    width: 100%;
+    background: url(./images/image-qr-code.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+h1 {
+    margin-top: 2rem;
+}
+
+p {
+    color: var(--grayish-blue);
+    font-size: 1.4rem;
+}
